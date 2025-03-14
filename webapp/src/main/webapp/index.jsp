@@ -1,26 +1,30 @@
-def display_menu():
-    print("\n--- Menu ---")
-    print("1. Option 1")
-    print("2. Option 2")
-    print("3. Option 3")
-    print("4. Exit")
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Best Restaurants in Hyderabad</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Best Restaurants in Hyderabad</h1>
+  </header>
 
-def main():
-    while True:
-        display_menu()
-        choice = input("Enter your choice: ")
+  <main>
+    <section>
+      <h2>Top 10 Restaurants to Visit in Hyderabad</h2>
+      <ul id="restaurant-list">
+        <!-- Restaurant list will be populated by JavaScript -->
+      </ul>
+    </section>
+  </main>
 
-        if choice == '1':
-            print("You chose Option 1")
-        elif choice == '2':
-            print("You chose Option 2")
-        elif choice == '3':
-            print("You chose Option 3")
-        elif choice == '4':
-            print("Exiting...")
-            break
-        else:
-            print("Invalid choice. Please try again.")
+  <footer>
+    <p>Information gathered from top sources about restaurants in Hyderabad.</p>
+  </footer>
 
-if __name__ == "__main__":
-    main()
+  <script src="app.js"></script>
+</body>
+</html>
